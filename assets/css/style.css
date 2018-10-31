@@ -1,10 +1,8 @@
 
-.bordercard{
-	border: 5px solid black !important;
 footer{
   background-color: #232323;
   color: white;
-  position:
+  border: 5px solid black !important;
 }
 .card{
   width: 400px;
