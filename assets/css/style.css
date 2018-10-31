@@ -1,21 +1,25 @@
 
-<<<<<<< HEAD
-=======
 .bordercard{
 	border: 5px solid black !important;
 }
->>>>>>> 20353981c4fd2f4b9f41359fcae23e002b174257
 footer{
-  background-color: #232323;
+  background-color: #343A40;
   color: white;
-  border: 5px solid black !important;
 }
-.card{
-  width: 400px;
-  height: 400px;
-}
-
 .imageimg{
 	width: 1366px;
 	height: 570px;
+}
+.imgImage{
+  width: 350px;
+  height: 300px;
+}
+.mtfooter{
+  margin-top: 2%;
+}
+.card-text{
+}
+.logofooter{
+  width: 30px;
+  height:25px;
 }
