@@ -3,20 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.js"></script>
-  <link rel="stylesheet" src="assets/css/style.css">
+
   <title>Scaryshop</title>
 </head>
 <body>
-  <div ng-view></div>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -46,24 +45,35 @@
       </form>
     </div>
   </nav>
-  <div>
-    <a href="#!/costumes"></a>
-    <a href="#!/deco"></a>
-    <a href="#!/maquillage"></a>
+  <div class="container-fluid">
+    <div ng-view></div>
   </div>
+  <!--Footer  -->
+  <footer class="fixed-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <p class="small" style="color:white"><img src="assets/img/picto_transport.png" alt="Picto Transport">Transport GRATUIT DES 120€ TTC</p>
+        </div>
+        <div class="col-sm-3">
+          <p class="small" style="color:white"><img src="assets/img/picto_depart.png" alt="Picto départ">DEPART SOUS 24H/48H</p>
+        </div>
+        <div class="col-sm-3">
+          <p class="small" style="color:white"><img src="assets/img/picto_paiement.png" alt="Picto Transport">PAIEMENT SECURISE CB</p>
+        </div>
+        <div class="col-sm-3">
+          <p class="small" style="color:white"><img src="assets/img/picto_virement.png" alt="Picto virement">VIREMENT ET CHEQUE</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="small" style="text-align:center">&copy; Copyright-2018 Scaryshop</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-
-                  <!--Footer  -->
-<footer>
-
-
-
-
-</footer>
-
-                  <!--Liens  -->
-
-
+  <!--Liens  -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
