@@ -1,3 +1,6 @@
+
+.bordercard{
+	border: 5px solid black !important;
 footer{
   background-color: #232323;
   color: white;
@@ -8,3 +11,8 @@ footer{
   height: 400px;
 }
 
+}
+.imageimg{
+	width: 1366px;
+	height: 570px;
+}
