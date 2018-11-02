@@ -1,25 +1,23 @@
 
 .bordercard{
-	border: 5px solid black !important;
+	border: px solid red !important;
 }
 footer{
-  background-color: #343A40;
+  background-color: #232323;
   color: white;
+  position:
 }
+
 .imageimg{
-	width: 1366px;
 	height: 570px;
 }
 .imgImage{
-  width: 350px;
-  height: 300px;
+	width: 350px;
+	height: 300px;
 }
-.mtfooter{
-  margin-top: 2%;
-}
-.card-text{
-}
-.logofooter{
-  width: 30px;
-  height:25px;
+.price{
+	float: right;
+	font-weight: bold;
+	font-size: 16px;
+	color: red;
 }
