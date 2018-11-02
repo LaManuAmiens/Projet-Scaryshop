@@ -3,11 +3,9 @@
 	border: px solid red !important;
 }
 footer{
-  background-color: #232323;
+  background-color: #343A40;
   color: white;
-  position:
 }
-
 .imageimg{
 	height: 570px;
 }
@@ -23,4 +21,13 @@ footer{
 }
 nav{
 	justify-content: center !important;
+}
+.mtfooter{
+  margin-top: 2%;
+}
+.card-text{
+}
+.logofooter{
+  width: 30px;
+  height:25px;
 }
