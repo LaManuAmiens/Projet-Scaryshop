@@ -1,12 +1,7 @@
 var shopApp = angular.module("shopApp", ["ngRoute"]);
-shopApp.run(function($rootScope, $http){
-  $http.get("assets/json/products.json")
-  .then(function(res){
-    $rootScope.products = res.data;
-  })
-})
+
 //config routeur
-shopApp.config(["$routeProvider", function($routeProvider){
+shopApp.config(function($routeProvider){
   $routeProvider
   .when("/accueil",{
     templateUrl: "partials/accueil.html",
@@ -27,12 +22,31 @@ shopApp.config(["$routeProvider", function($routeProvider){
   .otherwise({
     redirectTo: "/accueil"
   })
-}])
-shopApp.controller("costumesCtrl", ["$scope", "$rootScope", function($scope, $rootScope){
-  $scope.addCart = function ($scope) {
-    if (product.qty >= max) { return; }
-    product.qty++;
-
-    console.log(product.qty);
+});
+shopApp.run(function($rootScope, $http){
+  $http.get("assets/json/products.json")
+  .then(function(res){
+    $rootScope.products = res.data;
+  })
+  $rootScope.cart = [];
+});
+shopApp.controller("costumesCtrl",function($scope, $rootScope){
+  $scope.addCart = function () {
+    $rootScope.cart.push($rootScope.products.name);
+    console.log($rootScope.products.name);
+    console.log($rootScope.cart);
+    alert("Votre article à bien été ajouté au panier !");
   }
-}]);
+});
+shopApp.controller("decoCtrl", function($scope, $rootScope){
+  $scope.addCart = function() {
+    $rootScope.cart.push($rootScope.products.name);
+    alert("Votre article à bien été ajouté au panier !");
+  }
+});
+shopApp.controller("maquillageCtrl", function($scope, $rootScope){
+  $scope.addCart = function() {
+    $rootScope.cart.push($rootScope.products.name);
+    alert("Votre article à bien été ajouté au panier !");
+  }
+});
