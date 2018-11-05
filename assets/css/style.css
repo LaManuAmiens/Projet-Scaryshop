@@ -1,23 +1,55 @@
-
 .bordercard{
-	border: px solid red !important;
+    border: px solid black !important;
 }
 footer{
-  background-color: #232323;
+  background-color: #343A40;
   color: white;
-  position:
 }
-
 .imageimg{
-	height: 570px;
+    height: 550px;
 }
 .imgImage{
-	width: 350px;
-	height: 300px;
+    width: 350px;
+    height: 300px;
 }
 .price{
-	float: right;
-	font-weight: bold;
-	font-size: 16px;
-	color: red;
+    float: right;
+    font-weight: bold;
+    font-size: 16px;
+    color: red;
+}
+nav{
+    justify-content: center !important;
+}
+.mtfooter{
+  margin-top: 2%;
+}
+.card-text{
+}
+.logofooter{
+  width: 30px;
+  height:25px;
+}
+body{
+  background-color: na;
+}
+.zoom{
+  position: relative;
+  overflow: hidden;
+
+}
+.zoom:hover img{
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+
+}
+.zoom img{
+  transition: all 0.5s;
+  -moz-transform: all 0.5s;
+  -webkit-transform: all 0.5s;
+
+}
+.form-inline{
+  margin-right: 60px;
 }
