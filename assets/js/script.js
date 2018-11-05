@@ -1,5 +1,10 @@
 var shopApp = angular.module("shopApp", ["ngRoute"]);
-
+shopApp.run(function($rootScope, $http){
+  $http.get("assets/json/products.json")
+  .then(function(res){
+    $rootScope.products = res.data;
+  })
+})
 //config routeur
 shopApp.config(["$routeProvider", function($routeProvider){
   $routeProvider
@@ -23,3 +28,11 @@ shopApp.config(["$routeProvider", function($routeProvider){
     redirectTo: "/accueil"
   })
 }])
+shopApp.controller("costumesCtrl", ["$scope", "$rootScope", function($scope, $rootScope){
+  $scope.addCart = function ($scope) {
+    if (product.qty >= max) { return; }
+    product.qty++;
+
+    console.log(product.qty);
+  }
+}]);
